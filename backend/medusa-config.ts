@@ -1,6 +1,4 @@
-import type { Config } from "@medusajs/medusa";
-
-const config: Config = {
+const config = {
   projectConfig: {
     jwtSecret: process.env.JWT_SECRET || "supersecret",
     cookieSecret: process.env.COOKIE_SECRET || "supersecret",
