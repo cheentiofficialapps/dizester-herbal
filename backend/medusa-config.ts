@@ -1,6 +1,6 @@
-import { MedusaOptions } from "@medusajs/medusa";
+import type { Config } from "@medusajs/medusa";
 
-const options: MedusaOptions = {
+const config: Config = {
   projectConfig: {
     jwtSecret: process.env.JWT_SECRET || "supersecret",
     cookieSecret: process.env.COOKIE_SECRET || "supersecret",
@@ -16,5 +16,4 @@ const options: MedusaOptions = {
   },
 };
 
-export default options;
-
+export default config;
