@@ -3,13 +3,13 @@
  * Creates: sales channel, region, products
  */
 
-import { Medusa } from "@medusajs/medusa";
+// Medusa v2.12.3 uses CLI commands
 import medusaConfig from "../../medusa-config";
 
 async function seed() {
   console.log("🌱 Starting seed...");
 
-  const medusa = new Medusa(medusaConfig);
+  const medusa = // Use medusa CLI: medusa migrations runmedusaConfig);
   await medusa.init();
 
   try {
